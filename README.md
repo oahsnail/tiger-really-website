@@ -1,1 +1,1 @@
-A really simple website I made for my band @tigerreally. 
+A simple website I made for my band @tigerreally. 
