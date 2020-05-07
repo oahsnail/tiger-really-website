@@ -73,17 +73,20 @@ p {
   height: auto;
 }
 
+/* footer stuff */
+
 .footer {
   position: fixed;
-  left: 0%;
-  bottom: 0%;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: inherit;
 }
 
 a:link {
   color: #252727;
-  text-decoration: none opacity:1.0;
+  text-decoration: none;
+  opacity: 1.0;
 }
 
 a:hover {
@@ -107,4 +110,8 @@ a:active {
   padding: 15px 10px 5px 10px;
   height: 45px;
   width: 45px;
+}
+
+.map {
+  outline: none;
 }
