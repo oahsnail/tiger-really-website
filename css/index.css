@@ -86,11 +86,11 @@ p {
 a:link {
   color: #252727;
   text-decoration: none;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   opacity: 0.6;
 }
