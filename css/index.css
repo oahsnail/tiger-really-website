@@ -22,8 +22,15 @@ p {
   font-family: arial, helvetica, sans-serif;
 }
 
+a {
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
 .center {
   display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,7 +87,7 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: inherit;
+  background-color: #ADD8E6;
 }
 
 a:link {
@@ -108,8 +115,10 @@ a:active {
 
 .icon {
   padding: 15px 10px 5px 10px;
-  height: 45px;
-  width: 45px;
+  min-height: 110px;
+  min-width: 110px;
+  max-height: 5%;
+  max-width: 5%;
 }
 
 .map {
