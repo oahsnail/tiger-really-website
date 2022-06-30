@@ -1,5 +1,5 @@
 body {
-  background-color: #c9efff;
+  background-color: #fff0db;
   padding-bottom: 200px;
 }
 
@@ -76,8 +76,9 @@ a {
 
 .header {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
+  margin-bottom: -50px;
 }
 
 /* footer stuff */
@@ -87,7 +88,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ADD8E6;
+  background-color: #eed9c4;
 }
 
 a:link {
