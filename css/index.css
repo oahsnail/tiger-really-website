@@ -35,6 +35,11 @@ a {
   margin-right: auto;
 }
 
+.spotify-embedded {
+  width: 70%;
+  height: 600px;
+}
+
 .relative {
   position: relative;
   top: 50%;
