@@ -29,44 +29,6 @@ a {
   font-size: x-large;
 }
 
-.navbar {
-  z-index: 1;
-  align-items: center;
-  text-align: center;
-}
-
-ul.navbar {
-  list-style-type: none;
-  margin-top: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-}
-
-ul.navbar li {
-  display: inline;
-
-}
-
-ul.navbar li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 14px 40px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: xx-large;
-
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 
 
 
@@ -95,7 +57,7 @@ li a:hover {
   margin-left: -25%;
 }
 
-.header {
+.logo {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -137,9 +99,6 @@ a:active {
 }
 
 @media screen and (max-width: 600px) {
-  ul.navbar li {
-    display: block;
-  }
   .youtube-embedded {
     height: auto;
     width: auto;

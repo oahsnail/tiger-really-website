@@ -10,29 +10,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
+  <script src="components/navbar.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <!-- homepage -->
-  <!-- <ul class="navbar">
-    <li><a href="index.html">About</a></li>
-    <li><a href="index.html">Music</a></li>
-    <li><a href="javascript:void(0)">Tour</a></li>
-    <li><a href="javascript:void(0)">Videos</a></li>
-    <li><a href="javascript:void(0)">Press Kit</a></li>
-    <li><a href="javascript:void(0)">Contact</a></li>
-  </ul> -->
-
+  <navbar-component></navbar-component>
 
   <div class="relative">
-    <img src="img/tr_transparent.png" class="header" />
+    <img src="img/tr_transparent.png" class="logo" />
   </div>
 
   <div class="center">
-    <iframe 
-      class="youtube-embedded"
-      src="https://www.youtube.com/embed/DReXigxqGXM" 
-      title="YouTube video player"
+    <iframe class="youtube-embedded" src="https://www.youtube.com/embed/DReXigxqGXM" title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
@@ -67,7 +57,6 @@
         alt="soundcloud" /></a>
     <a target="_blank" href="https://tigerreally.bandcamp.com/releases"><img src="icon/bandcamp-logo-png-4.png"
         class="icon" alt="bandcamp" /></a>
-
     <br />
   </div>
 </body>
