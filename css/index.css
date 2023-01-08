@@ -73,8 +73,12 @@ li a:hover {
 .center {
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.youtube-embedded {
+  width: 560px;
+  height: 315px;
+  margin-top: 30px;
 }
 
 .spotify-embedded {
@@ -108,32 +112,36 @@ li a:hover {
   background-color: #eed9c4;
 }
 
-.footer a:link {
+a:link {
   text-decoration: none;
   opacity: 1;
 }
 
-.footer a:hover {
+a:hover {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.6;
 }
 
-.footer a:active {
+a:active {
   color: #ff0000;
   text-decoration: none;
 }
 
 .icon {
-  padding: 15px 10px 5px 10px;
-  min-height: 110px;
-  min-width: 110px;
-  max-height: 5%;
-  max-width: 5%;
+  padding: 15px 4% 5px 10px;
+  height: 9%;
+  width: 9%;
+  max-height: 110px;
+  max-width: 110px;
 }
 
 @media screen and (max-width: 600px) {
   ul.navbar li {
     display: block;
+  }
+  .youtube-embedded {
+    height: auto;
+    width: auto;
   }
 }
