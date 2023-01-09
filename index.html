@@ -12,15 +12,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
   <script src="components/navbar.js" type="text/javascript" defer></script>
+  <script src="components/logo.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <!-- homepage -->
   <navbar-component></navbar-component>
 
-  <div class="relative">
-    <img src="img/tr_transparent.png" class="logo" />
-  </div>
+  <logo-component></logo-component>
 
   <div class="center">
     <iframe class="youtube-embedded" src="https://www.youtube.com/embed/DReXigxqGXM" title="YouTube video player"
@@ -45,21 +45,8 @@
 
   </div>
 
-  <div class="footer">
-    <a target="_blank" href="https://open.spotify.com/artist/7v1sBydqFkxYzy93nQpqJx?si=vU7pBTShRuqPI-aOanTLLA"><img
-        src="icon/spotify_black_icon.png" class="icon" alt="spotify" /></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCErbKaOip6mnEL0tb9PxzKQ"><img
-        src="icon/youtube_black_icon.png" class="icon" alt="youtube" /></a>
-    <a target="_blank" href="http://instagram.com/tigerreally"><img src="icon/instagram_icon_black.png" class="icon"
-        alt="instagram" /></a>
-    <a target="_blank" href="https://www.tiktok.com/@tigerreally?"><img src="icon/tiktok_black_icon.png" class="icon"
-        alt="tiktok" /></a>
-    <a target="_blank" href="https://soundcloud.com/tigerreally"><img src="icon/soundcloud_icon.png" class="icon"
-        alt="soundcloud" /></a>
-    <a target="_blank" href="https://tigerreally.bandcamp.com/releases"><img src="icon/bandcamp-logo-png-4.png"
-        class="icon" alt="bandcamp" /></a>
-    <br />
-  </div>
+  <footer-component></footer-component>
+
 </body>
 
 </html>

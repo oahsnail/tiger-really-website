@@ -2,9 +2,6 @@
     z-index: 1;
     align-items: center;
     text-align: center;
-}
-
-ul.navbar {
     list-style-type: none;
     margin-top: 0;
     padding: 0;
@@ -16,12 +13,7 @@ ul.navbar {
 
 }
 
-ul.navbar li {
-    display: inline;
-
-}
-
-ul.navbar li a {
+.navbar a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -33,14 +25,39 @@ ul.navbar li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navbar a:hover {
     background-color: #111;
 }
 
-@media screen and (max-width: 600px) {
+.navbar .icon {
+    display: none;
+}
 
-    ul.navbar li {
-        display: block;
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: none;
     }
 
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: fixed;
+    }
+
+    .navbar.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }

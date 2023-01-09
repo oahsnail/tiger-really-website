@@ -28,3 +28,27 @@ a {
     font-weight: bold;
     font-size: x-large;
 }
+
+a:link {
+    text-decoration: none;
+    opacity: 1;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+a:active {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.icon {
+    padding: 15px 4% 5px 10px;
+    height: 9%;
+    width: 9%;
+    max-height: 110px;
+    max-width: 110px;
+}
