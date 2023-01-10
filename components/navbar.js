@@ -9,8 +9,8 @@ class Navbar extends HTMLElement {
         <div id="topnav" class="navbar">
             <a href="/../index.html">About</a>
             <a href="/pages/music.html">Music</a>
-            <a href="javascript:void(0)">Tour</a>
-            <a href="javascript:void(0)">Press Kit</a>
+            <a href="/pages/tour.html">Tour</a>
+            <a href="/pages/press.html">Press Kit</a>
             <a href="/pages/contact.html">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i id="navIcon" class="fa fa-bars"></i>

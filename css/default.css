@@ -29,6 +29,12 @@ a {
     font-size: x-large;
 }
 
+.center {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 a:link {
     text-decoration: none;
     opacity: 1;
@@ -51,4 +57,9 @@ a:active {
     width: 9%;
     max-height: 110px;
     max-width: 110px;
+}
+
+.wip-picture {
+    height: 10%;
+    width: 10%;
 }
