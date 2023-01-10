@@ -1,0 +1,33 @@
+.bio {
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+}
+
+.press-picture {
+    max-width: 500px;
+    margin: auto;
+}
+
+.press-picture img {
+    max-width: 500px;
+    width: 80%;
+}
+
+.download-button {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    background-color: transparent;
+}
+
+.download-button a {
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .press-picture {
+        margin-top: 10%;
+    }
+}
