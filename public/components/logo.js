@@ -4,10 +4,10 @@ class Logo extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = `
-        <link rel="stylesheet" type="text/css" href="/css/components/logo.css" />
+        <link rel="stylesheet" type="text/css" href="/public/css/components/logo.css" />
         <div class="logo-container">
-            <a href=" /../index.html">
-            <img src="../img/tr_transparent.png" class="logo" />
+            <a href=" /public/index.html">
+            <img src="/public/img/tr_transparent.png" class="logo" />
             </a>
         </div>
         `;
