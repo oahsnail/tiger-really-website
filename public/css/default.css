@@ -39,6 +39,7 @@ a {
     display: block;
     text-align: center;
     margin: auto;
+    width: 80%;
 }
 
 a:link {
