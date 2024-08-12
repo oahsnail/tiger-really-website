@@ -35,6 +35,11 @@
     padding-bottom: 20px;
 }
 
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 90%;
+}
+
 @media screen and (max-width: 600px) {
     .press-picture {
         margin-top: 10%;
