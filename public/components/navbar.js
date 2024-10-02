@@ -10,6 +10,7 @@ class Navbar extends HTMLElement {
             <a href="/index.html">About</a>
             <a href="/pages/music.html">Music</a>
             <a href="/pages/tour.html">Tour</a>
+            <a href="https://counterintuitiverecords.com/collections/tiger-really">Store</a>
             <a href="/pages/press.html">Press Kit</a>
             <a href="/pages/contact.html">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
