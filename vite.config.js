@@ -6,14 +6,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueDevTools()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    plugins: [vue(), vueDevTools()],
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
+        },
     },
-  },
-  build: {
-    outDir: 'public', // <-- Add this line
-    emptyOutDir: false, // Optional: prevents deleting files in public before build
-  },
+    build: {
+        outDir: 'public',
+    },
 })
