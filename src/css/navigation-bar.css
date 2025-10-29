@@ -30,6 +30,10 @@
     }
 }
 
+.el-menu {
+    background-color: #044153;
+}
+
 a {
     text-decoration: none;
     color: inherit;

@@ -5,20 +5,20 @@ import 'element-plus/dist/index.css'
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
-import Dashboard from '@/views/HomeView.vue'
-import Configure from '@/views/TourView.vue'
-import Graphs from '@/views/ContactView.vue'
-import HOA from '@/views/PressKitView.vue'
-import Schedules from './views/StoreView.vue'
+import HomeView from '@/views/HomeView.vue'
+import TourView from '@/views/TourView.vue'
+import ContactView from '@/views/ContactView.vue'
+import PressKitView from '@/views/PressKitView.vue'
+import StoreView from './views/StoreView.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
-        { path: '/', component: Dashboard },
-        { path: '/graphs', component: Graphs },
-        { path: '/schedules', component: Schedules },
-        { path: '/hoa', component: HOA },
-        { path: '/configure', component: Configure },
+        { path: '/', component: HomeView },
+        { path: '/tour', component: TourView },
+        { path: '/contact', component: ContactView },
+        { path: '/press-kit', component: PressKitView },
+        { path: '/store', component: StoreView },
     ],
 })
 

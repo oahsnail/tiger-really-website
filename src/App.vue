@@ -3,36 +3,22 @@
         <el-header>
             <el-row>
                 <el-col :span="8">
-                    <el-icon
-                        id="nav-toggle"
-                        v-if="!isDesktop"
-                        @click="toggleNavbar"
-                        color="white"
-                        size="50"
-                        style="padding: 15px"
-                    >
+                    <el-icon id="nav-toggle" v-if="!isDesktop" @click="toggleNavbar" color="white" size="50"
+                        style="padding: 15px">
                         <Expand />
                     </el-icon>
                 </el-col>
                 <el-col :span="8">
-                    <el-image class="main-logo" :src="waterTCMLogo" :fit="fit" />
+                    <el-image class="main-logo" :src="trLOGO" :fit="fit" />
                 </el-col>
                 <el-col :span="8">
-                    <el-image
-                        style="max-height: 80px; max-width: 80px; position: absolute; right: 0px"
-                        :src="betaBanner"
-                        fit="contain"
-                    />
+
                 </el-col>
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar
-                :isCollapseProp="navbarCollapsed"
-                @update-navbar-collapsed="toggleNavbar"
-                style="z-index: 1"
-                id="nav-bar"
-            />
+            <NavigationBar :isCollapseProp="navbarCollapsed" @update-navbar-collapsed="toggleNavbar" style="z-index: 1"
+                id="nav-bar" />
 
             <div style="padding-top: 5vh"></div>
 
@@ -43,16 +29,14 @@
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import url from '@/assets/img/WaterTCM-logo-temp.png'
-import url2 from '@/assets/img/beta-corner-banner.png'
+import logo_url from '@/assets/img/tr_white.png'
 import { isDesktop as isDesktopUtil } from './util'
 
 export default {
     name: 'App',
     data() {
         return {
-            waterTCMLogo: url,
-            betaBanner: url2,
+            trLOGO: logo_url,
             fit: 'contain',
             navbarCollapsed: true,
         }

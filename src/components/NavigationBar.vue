@@ -1,34 +1,28 @@
 <template>
-    <el-menu
-        background-color="#276477"
-        text-color="#ffffff"
-        v-model:collapse="isCollapse"
-        :default-active="activeIndex"
-        :mode="orientation"
-    >
+    <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation">
         <router-link to="/">
             <el-menu-item @click="handleSelect">
-                <template #title> Dashboard </template>
+                <template #title> Home </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/graphs">
+        <router-link to="/tour">
             <el-menu-item @click="handleSelect">
-                <template #title> Graphs </template>
+                <template #title> Tour </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/schedules">
+        <router-link to="/music">
             <el-menu-item @click="handleSelect">
-                <template #title> Schedules </template>
+                <template #title> Music </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/hoa">
+        <router-link to="/press-kit">
             <el-menu-item @click="handleSelect">
-                <template #title> HOA </template>
+                <template #title> Press Kit </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/configure">
+        <router-link to="/store">
             <el-menu-item @click="handleSelect">
-                <template #title> Configure </template>
+                <template #title> Store </template>
             </el-menu-item>
         </router-link>
     </el-menu>

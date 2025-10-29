@@ -2,6 +2,6 @@
 
 <script>
 export default {
-    name: 'MusicView',
+    name: 'StoreView',
 }
 </script>
