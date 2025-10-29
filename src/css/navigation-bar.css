@@ -1,0 +1,36 @@
+.el-menu:not(.el-menu--collapse) {
+    width: 200px;
+    height: 100vh;
+}
+
+.el-menu--collapse {
+    width: 0px;
+    height: 100vh;
+
+    /* Prevents navbar from being clicked while collapsed */
+    pointer-events: none;
+}
+
+.el-menu--vertical {
+    z-index: 1000 !important;
+    position: fixed;
+}
+
+.el-menu--horizontal {
+    position: fixed;
+    width: 100% !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .el-menu-item {
+        padding-inline: 60px;
+        height: 50px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
