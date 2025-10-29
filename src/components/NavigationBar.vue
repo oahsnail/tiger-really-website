@@ -10,9 +10,9 @@
                 <template #title> Tour </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/music">
+        <router-link to="/contact">
             <el-menu-item @click="handleSelect">
-                <template #title> Music </template>
+                <template #title> Contact </template>
             </el-menu-item>
         </router-link>
         <router-link to="/press-kit">

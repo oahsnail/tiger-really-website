@@ -27,6 +27,6 @@ coverage
 
 .eslintcache
 
-
+.env
 # Vitest
 __screenshots__/
