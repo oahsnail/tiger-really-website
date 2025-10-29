@@ -14,11 +14,11 @@ import StoreView from './views/StoreView.vue'
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
-        { path: '/', component: HomeView },
-        { path: '/tour', component: TourView },
-        { path: '/contact', component: ContactView },
-        { path: '/press-kit', component: PressKitView },
-        { path: '/store', component: StoreView },
+        { path: '/', component: HomeView, meta: { title: 'Home' } },
+        { path: '/tour', component: TourView, meta: { title: 'Tour' } },
+        { path: '/contact', component: ContactView, meta: { title: 'Contact' } },
+        { path: '/press-kit', component: PressKitView, meta: { title: 'Press Kit' } },
+        { path: '/store', component: StoreView, meta: { title: 'Store' } },
     ],
 })
 
@@ -29,3 +29,12 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 app.use(ElementPlus)
 app.use(router)
 app.mount('#app')
+
+router.afterEach((to) => {
+    const baseTitle = 'Tiger Really'
+    if (to.meta && to.meta.title) {
+        document.title = `${to.meta.title} - ${baseTitle}`
+    } else {
+        document.title = baseTitle
+    }
+})
