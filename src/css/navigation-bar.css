@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'NeueHaasDisplay';
-    src: url('../assets/NeueHaasDisplay-Black.ttf') format('truetype');
+    src: url('@/assets/fonts/NeueHaasDisplay-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
