@@ -1,17 +1,17 @@
 <template>
-    <main>
+    <el-container>
         <el-header>
             <el-row>
-                <el-col :span="8">
+                <el-col :span="4">
                     <el-icon id="nav-toggle" v-if="!isDesktop" @click="openSidebar" color="white" size="50"
                         style="padding: 15px">
                         <Expand />
                     </el-icon>
                 </el-col>
-                <el-col :span="8">
-                    <el-image class="main-logo" :src="trLOGO" :fit="fit" />
+                <el-col :span="16">
+                    <el-image v-if="!isDesktop" class="main-logo" :src="trLOGO" :fit="fit" />
                 </el-col>
-                <el-col :span="8"> </el-col>
+                <el-col :span="4"> </el-col>
             </el-row>
         </el-header>
         <el-main>
@@ -22,7 +22,9 @@
         <el-footer class="footer-icons">
             <IconLinks />
         </el-footer>
-    </main>
+        <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
+        <small class="center tiny-text"> Built with love (and Vue.js) by Lian :D </small>
+    </el-container>
 </template>
 
 <script>
