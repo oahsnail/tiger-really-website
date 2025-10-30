@@ -31,7 +31,14 @@
 }
 
 .el-menu {
-    background-color: #000000;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.el-menu--horizontal {
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 a {

@@ -10,6 +10,7 @@ import TourView from '@/views/TourView.vue'
 import ContactView from '@/views/ContactView.vue'
 import PressKitView from '@/views/PressKitView.vue'
 import StoreView from '@/views/StoreView.vue'
+import VideosView from '@/views/VideosView.vue'
 import { initializeApp } from 'firebase/app'
 import { getAnalytics, logEvent } from 'firebase/analytics'
 
@@ -37,8 +38,9 @@ const router = createRouter({
         { path: '/', component: HomeView, meta: { title: 'Home' } },
         { path: '/tour', component: TourView, meta: { title: 'Tour' } },
         { path: '/contact', component: ContactView, meta: { title: 'Contact' } },
-        { path: '/press-kit', component: PressKitView, meta: { title: 'Press Kit' } },
+        { path: '/press', component: PressKitView, meta: { title: 'Press Kit' } },
         { path: '/store', component: StoreView, meta: { title: 'Store' } },
+        { path: '/videos', component: VideosView, meta: { title: 'Videos' } },
     ],
 })
 

@@ -1,27 +1,12 @@
 <template>
-    <el-menu
-        text-color="#ffffff"
-        v-model:collapse="isCollapse"
-        :default-active="activeIndex"
-        :mode="orientation"
-        class="navigation-bar"
-    >
-        <router-link to="/">
-            <el-menu-item @click="handleSelect">
-                <template #title> Home </template>
-            </el-menu-item>
-        </router-link>
+    <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
+        class="navigation-bar">
         <router-link to="/tour">
             <el-menu-item @click="handleSelect">
                 <template #title> Tour </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/contact">
-            <el-menu-item @click="handleSelect">
-                <template #title> Contact </template>
-            </el-menu-item>
-        </router-link>
-        <router-link to="/press-kit">
+        <router-link to="/press">
             <el-menu-item @click="handleSelect">
                 <template #title> Press Kit </template>
             </el-menu-item>
@@ -29,6 +14,16 @@
         <router-link to="/store">
             <el-menu-item @click="handleSelect">
                 <template #title> Store </template>
+            </el-menu-item>
+        </router-link>
+        <router-link to="/videos">
+            <el-menu-item @click="handleSelect">
+                <template #title> Videos </template>
+            </el-menu-item>
+        </router-link>
+        <router-link to="/contact">
+            <el-menu-item @click="handleSelect">
+                <template #title> Contact </template>
             </el-menu-item>
         </router-link>
     </el-menu>

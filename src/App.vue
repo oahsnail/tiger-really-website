@@ -9,9 +9,12 @@
                     </el-icon>
                 </el-col>
                 <el-col :span="16">
-                    <el-image v-if="!isDesktop" class="main-logo" :src="trLOGO" :fit="fit" />
+                    <el-image v-if="!isDesktop" class="main-logo-mobile" :src="trLOGO" :fit="fit" />
                 </el-col>
                 <el-col :span="4"> </el-col>
+            </el-row>
+            <el-row v-if="isDesktop">
+                <el-image class="main-logo-desktop" :src="trLOGO" :fit="fit" />
             </el-row>
         </el-header>
         <el-main>
