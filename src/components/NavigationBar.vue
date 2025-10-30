@@ -1,6 +1,11 @@
 <template>
-    <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
-        class="navigation-bar">
+    <el-menu
+        text-color="#ffffff"
+        v-model:collapse="isCollapse"
+        :default-active="activeIndex"
+        :mode="orientation"
+        class="navigation-bar"
+    >
         <router-link to="/tour">
             <el-menu-item @click="handleSelect">
                 <template #title> Tour </template>

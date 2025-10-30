@@ -16,8 +16,8 @@
 }
 
 .footer-icon {
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     filter: var(--footer-icon-filter, invert(1));
     /* Set to black: no invert filter */
     transition:

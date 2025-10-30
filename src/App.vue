@@ -3,8 +3,14 @@
         <el-header>
             <el-row>
                 <el-col :span="4">
-                    <el-icon id="nav-toggle" v-if="!isDesktop" @click="openSidebar" color="white" size="50"
-                        style="padding: 15px">
+                    <el-icon
+                        id="nav-toggle"
+                        v-if="!isDesktop"
+                        @click="openSidebar"
+                        color="white"
+                        size="30"
+                        style="padding: 25px"
+                    >
                         <Expand />
                     </el-icon>
                 </el-col>
@@ -18,7 +24,12 @@
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar ref="navbar" style="z-index: 1" id="nav-bar" @close-sidebar="closeSidebar" />
+            <NavigationBar
+                ref="navbar"
+                style="z-index: 1"
+                id="nav-bar"
+                @close-sidebar="closeSidebar"
+            />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
@@ -40,7 +51,7 @@ export default {
     name: 'App',
     components: {
         NavigationBar,
-        IconLinks
+        IconLinks,
     },
     data() {
         return {
