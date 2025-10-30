@@ -1,31 +1,27 @@
 <template>
-    <el-menu
-        text-color="#ffffff"
-        v-model:collapse="isCollapse"
-        :default-active="activeIndex"
-        :mode="orientation"
-        class="navigation-bar"
-    >
+    <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
+        class="navigation-bar">
+        <router-link to="/music">
+            <el-menu-item @click="handleSelect">
+                <template #title> Music </template>
+            </el-menu-item>
+        </router-link>
         <router-link to="/tour">
             <el-menu-item @click="handleSelect">
                 <template #title> Tour </template>
             </el-menu-item>
         </router-link>
+
         <router-link to="/press">
             <el-menu-item @click="handleSelect">
-                <template #title> Press Kit </template>
+                <template #title> Press </template>
             </el-menu-item>
         </router-link>
-        <router-link to="/store">
-            <el-menu-item @click="handleSelect">
+        <a href="https://counterintuitiverecords.com/collections/tiger-really" target="_blank" rel="noopener">
+            <el-menu-item>
                 <template #title> Store </template>
             </el-menu-item>
-        </router-link>
-        <router-link to="/videos">
-            <el-menu-item @click="handleSelect">
-                <template #title> Videos </template>
-            </el-menu-item>
-        </router-link>
+        </a>
         <router-link to="/contact">
             <el-menu-item @click="handleSelect">
                 <template #title> Contact </template>

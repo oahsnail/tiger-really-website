@@ -15,14 +15,14 @@
                 </el-col>
                 <el-col :span="4"> </el-col>
             </el-row>
-            <el-row class="main-logo-desktop" v-if="isDesktop">
-                <router-link v-if="isDesktop" to="/">
+            <el-row class="main-logo-desktop center" v-if="isDesktop">
+                <router-link to="/">
                     <el-image :src="trLOGO" :fit="fit" />
                 </router-link>
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar ref="navbar" style="z-index: 1" id="nav-bar" @close-sidebar="closeSidebar" />
+            <NavigationBar ref="navbar" class="center" id="nav-bar" @close-sidebar="closeSidebar" />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
@@ -36,7 +36,7 @@
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import logo_url from '@/assets/img/tr_white.png'
+import logo_url from '@/assets/img/tr_white_clear.png'
 import '@/css/footer.css'
 import IconLinks from '@/components/IconLinks.vue'
 

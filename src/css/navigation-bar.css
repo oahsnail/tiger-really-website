@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'NeueHaasDisplay';
+    src: url('../assets/NeueHaasDisplay-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .el-menu:not(.el-menu--collapse) {
     width: 200px;
     height: 100vh;
@@ -23,11 +30,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    .el-menu-item {
-        padding-inline: 60px;
-        height: 50px;
-    }
+.el-menu--horizontal .el-menu-item {
+    padding-inline: 60px;
+    height: 50px;
+    background: transparent !important;
+    transition: color 0.2s;
+    font-family: 'NeueHaasDisplay', Arial, sans-serif !important;
+    font-size: 1.3rem !important;
+}
+
+/* Only highlight the text, not the rectangle, on hover */
+.el-menu--horizontal .el-menu-item:hover,
+.el-menu--horizontal .el-menu-item.is-active {
+    background: transparent !important;
+}
+.el-menu--horizontal .el-menu-item:hover .el-menu-item__title,
+.el-menu--horizontal .el-menu-item.is-active .el-menu-item__title {
+    color: #ffd902 !important; /* Example: gold highlight */
+}
+
+/* Make sure the text is targeted */
+.el-menu--horizontal .el-menu-item__title {
+    transition: color 0.2s;
 }
 
 .el-menu {
