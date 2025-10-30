@@ -1,6 +1,11 @@
 <template>
-    <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
-        class="navigation-bar">
+    <el-menu
+        text-color="#ffffff"
+        v-model:collapse="isCollapse"
+        :default-active="activeIndex"
+        :mode="orientation"
+        class="navigation-bar"
+    >
         <router-link to="/">
             <el-menu-item @click="handleSelect">
                 <template #title> Home </template>
@@ -29,9 +34,8 @@
     </el-menu>
 </template>
 
-
 <script>
-import '../css/navigation-bar.css';
+import '../css/navigation-bar.css'
 
 export default {
     name: 'NavigationBar',
@@ -40,39 +44,39 @@ export default {
             isCollapse: window.innerWidth < 900,
             orientation: window.innerWidth >= 900 ? 'horizontal' : 'vertical',
             activeIndex: this.$route.fullPath,
-        };
+        }
     },
     mounted() {
-        window.addEventListener('resize', this.handleResize);
+        window.addEventListener('resize', this.handleResize)
     },
     beforeUnmount() {
-        window.removeEventListener('resize', this.handleResize);
+        window.removeEventListener('resize', this.handleResize)
     },
     watch: {
         $route(to) {
-            this.activeIndex = to.fullPath;
+            this.activeIndex = to.fullPath
         },
     },
     methods: {
         isDesktop() {
-            return window.innerWidth >= 900;
+            return window.innerWidth >= 900
         },
         handleResize() {
-            const desktop = this.isDesktop();
-            this.orientation = desktop ? 'horizontal' : 'vertical';
-            this.isCollapse = !desktop;
+            const desktop = this.isDesktop()
+            this.orientation = desktop ? 'horizontal' : 'vertical'
+            this.isCollapse = !desktop
         },
         handleSelect() {
             if (!this.isDesktop()) {
-                this.isCollapse = true;
-                this.$emit('close-sidebar');
+                this.isCollapse = true
+                this.$emit('close-sidebar')
             }
         },
         openSidebar() {
             if (!this.isDesktop()) {
-                this.isCollapse = false;
+                this.isCollapse = false
             }
         },
     },
-};
+}
 </script>
