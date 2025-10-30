@@ -3,33 +3,26 @@
         <el-header>
             <el-row>
                 <el-col :span="4">
-                    <el-icon
-                        id="nav-toggle"
-                        v-if="!isDesktop"
-                        @click="openSidebar"
-                        color="white"
-                        size="30"
-                        style="padding: 25px"
-                    >
+                    <el-icon id="nav-toggle" v-if="!isDesktop" @click="openSidebar" color="white" size="30"
+                        style="padding: 25px">
                         <Expand />
                     </el-icon>
                 </el-col>
                 <el-col :span="16">
-                    <el-image v-if="!isDesktop" class="main-logo-mobile" :src="trLOGO" :fit="fit" />
+                    <router-link v-if="!isDesktop" to="/">
+                        <el-image class="main-logo-mobile" :src="trLOGO" :fit="fit" />
+                    </router-link>
                 </el-col>
                 <el-col :span="4"> </el-col>
             </el-row>
-            <el-row v-if="isDesktop">
-                <el-image class="main-logo-desktop" :src="trLOGO" :fit="fit" />
+            <el-row class="main-logo-desktop" v-if="isDesktop">
+                <router-link v-if="isDesktop" to="/">
+                    <el-image :src="trLOGO" :fit="fit" />
+                </router-link>
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar
-                ref="navbar"
-                style="z-index: 1"
-                id="nav-bar"
-                @close-sidebar="closeSidebar"
-            />
+            <NavigationBar ref="navbar" style="z-index: 1" id="nav-bar" @close-sidebar="closeSidebar" />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
