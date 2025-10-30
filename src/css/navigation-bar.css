@@ -24,7 +24,7 @@
 }
 
 .el-menu--horizontal {
-    position: fixed;
+    /* position: fixed; */
     width: 100% !important;
     height: 50px !important;
     display: flex;

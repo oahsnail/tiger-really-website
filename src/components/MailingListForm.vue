@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import './mailing-list-form.css';
+import '../css/mailing-list-form.css';
 export default {
     name: 'MailingListForm',
     data() {
