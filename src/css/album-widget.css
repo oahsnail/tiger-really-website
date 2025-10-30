@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+a {
+    display: inline-block;
+}
+
 @media (min-width: 768px) {
     .album-cover {
         width: 500px;
