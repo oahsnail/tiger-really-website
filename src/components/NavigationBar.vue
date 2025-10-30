@@ -31,19 +31,14 @@
 
 
 <script>
-import '../css/navigation-bar.css'
-
-function isDesktop() {
-    // You can adjust the breakpoint as needed
-    return window.innerWidth >= 900;
-}
+import '../css/navigation-bar.css';
 
 export default {
     name: 'NavigationBar',
     data() {
         return {
-            isCollapse: !isDesktop(),
-            orientation: isDesktop() ? 'horizontal' : 'vertical',
+            isCollapse: window.innerWidth < 900,
+            orientation: window.innerWidth >= 900 ? 'horizontal' : 'vertical',
             activeIndex: this.$route.fullPath,
         };
     },
@@ -59,22 +54,25 @@ export default {
         },
     },
     methods: {
+        isDesktop() {
+            return window.innerWidth >= 900;
+        },
         handleResize() {
-            const desktop = isDesktop();
+            const desktop = this.isDesktop();
             this.orientation = desktop ? 'horizontal' : 'vertical';
             this.isCollapse = !desktop;
         },
         handleSelect() {
-            if (!isDesktop()) {
+            if (!this.isDesktop()) {
                 this.isCollapse = true;
                 this.$emit('close-sidebar');
             }
         },
         openSidebar() {
-            if (!isDesktop()) {
+            if (!this.isDesktop()) {
                 this.isCollapse = false;
             }
         },
     },
-}
+};
 </script>

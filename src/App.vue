@@ -23,31 +23,32 @@
     </main>
 </template>
 
+
 <script>
 import NavigationBar from './components/NavigationBar.vue';
 import logo_url from '@/assets/img/tr_white.png';
-import { isDesktop as isDesktopUtil } from './util';
 
 export default {
     name: 'App',
+    components: {
+        NavigationBar,
+    },
     data() {
         return {
             trLOGO: logo_url,
             fit: 'contain',
-            isDesktop: isDesktopUtil(),
-        }
-    },
-    components: {
-        NavigationBar,
+            isDesktop: window.innerWidth >= 900,
+        };
     },
     methods: {
+        checkIsDesktop() {
+            this.isDesktop = window.innerWidth >= 900;
+        },
         openSidebar() {
             if (this.$refs.navbar) {
                 if (this.$refs.navbar.isCollapse === false) {
-                    // Sidebar is open, close it
                     this.$refs.navbar.isCollapse = true;
                 } else if (this.$refs.navbar.openSidebar) {
-                    // Sidebar is closed, open it
                     this.$refs.navbar.openSidebar();
                 }
             }
@@ -56,9 +57,6 @@ export default {
             if (this.$refs.navbar && this.$refs.navbar.isCollapse === false) {
                 this.$refs.navbar.isCollapse = true;
             }
-        },
-        handleResize() {
-            this.isDesktop = isDesktopUtil();
         },
         handleDocumentClick(e) {
             if (!this.isDesktop) {
@@ -75,12 +73,12 @@ export default {
         },
     },
     mounted() {
-        window.addEventListener('resize', this.handleResize);
+        window.addEventListener('resize', this.checkIsDesktop);
         document.addEventListener('click', this.handleDocumentClick);
     },
     beforeUnmount() {
-        window.removeEventListener('resize', this.handleResize);
+        window.removeEventListener('resize', this.checkIsDesktop);
         document.removeEventListener('click', this.handleDocumentClick);
     },
-}
+};
 </script>
