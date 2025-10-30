@@ -7,11 +7,15 @@
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" @submit.prevent="handleSubmit">
                     <div id="mc_embed_signup_scroll">
-                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" v-model="email"
-                                required>
+                        <small>Hear rumors and learn secrets</small>
+                        <div class="mailing-list-row">
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL"><span class="asterisk"></span></label>
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" v-model="email"
+                                    required placeholder="Email Address">
+                            </div>
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                value="Subscribe">
                         </div>
                         <div v-if="errorMessage" class="response" id="mce-error-response" style="color: red;">{{
                             errorMessage }}</div>
@@ -19,12 +23,6 @@
                             successMessage }}</div>
                         <div aria-hidden="true" style="position: absolute; left: -5000px;">
                             <input type="text" name="b_e28375888c2b5393a83132dfe_81b82d38c8" tabindex="-1" value="">
-                        </div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
-                                    value="Subscribe">
-                            </div>
                         </div>
                     </div>
                 </form>
@@ -34,6 +32,7 @@
 </template>
 
 <script>
+import './mailing-list-form.css';
 export default {
     name: 'MailingListForm',
     data() {

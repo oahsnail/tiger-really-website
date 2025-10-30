@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import MailingListForm from '../components/MailingListForm.vue';
+import MailingListForm from '@/components/MailingListForm.vue';
 
 export default {
     name: 'HomeView',
