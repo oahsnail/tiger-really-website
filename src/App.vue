@@ -3,14 +3,8 @@
         <el-header>
             <el-row>
                 <el-col :span="8">
-                    <el-icon
-                        id="nav-toggle"
-                        v-if="!isDesktop"
-                        @click="openSidebar"
-                        color="white"
-                        size="50"
-                        style="padding: 15px"
-                    >
+                    <el-icon id="nav-toggle" v-if="!isDesktop" @click="openSidebar" color="white" size="50"
+                        style="padding: 15px">
                         <Expand />
                     </el-icon>
                 </el-col>
@@ -21,34 +15,12 @@
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar
-                ref="navbar"
-                style="z-index: 1"
-                id="nav-bar"
-                @close-sidebar="closeSidebar"
-            />
+            <NavigationBar ref="navbar" style="z-index: 1" id="nav-bar" @close-sidebar="closeSidebar" />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
         <el-footer class="footer-icons">
-            <a href="https://music.apple.com/" target="_blank" rel="noopener" title="Apple Music">
-                <img src="@/assets/icons/applemusic.svg" class="footer-icon" alt="Apple Music" />
-            </a>
-            <a href="https://bandcamp.com/" target="_blank" rel="noopener" title="Bandcamp">
-                <img src="@/assets/icons/bandcamp.svg" class="footer-icon" alt="Bandcamp" />
-            </a>
-            <a href="https://discord.com/" target="_blank" rel="noopener" title="Discord">
-                <img src="@/assets/icons/discord.svg" class="footer-icon" alt="Discord" />
-            </a>
-            <a href="https://spotify.com/" target="_blank" rel="noopener" title="Spotify">
-                <img src="@/assets/icons/spotify.svg" class="footer-icon" alt="Spotify" />
-            </a>
-            <a href="https://tiktok.com/" target="_blank" rel="noopener" title="TikTok">
-                <img src="@/assets/icons/tiktok.svg" class="footer-icon" alt="TikTok" />
-            </a>
-            <a href="https://youtube.com/" target="_blank" rel="noopener" title="YouTube">
-                <img src="@/assets/icons/youtube.svg" class="footer-icon" alt="YouTube" />
-            </a>
+            <IconLinks />
         </el-footer>
     </main>
 </template>
@@ -57,11 +29,13 @@
 import NavigationBar from './components/NavigationBar.vue'
 import logo_url from '@/assets/img/tr_white.png'
 import '@/css/footer.css'
+import IconLinks from '@/components/IconLinks.vue'
 
 export default {
     name: 'App',
     components: {
         NavigationBar,
+        IconLinks
     },
     data() {
         return {
