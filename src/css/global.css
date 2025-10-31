@@ -36,8 +36,8 @@
     padding-top: 5px;
     padding-left: 5px;
     z-index: 2;
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
 }
+
 .main-logo-desktop {
     width: 350px;
     height: auto;
