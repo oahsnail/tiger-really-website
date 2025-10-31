@@ -12,12 +12,17 @@
     padding-left: 0px !important;
 }
 
+#nav-toggle {
+    z-index: 2;
+}
+
 .main-logo-mobile {
     width: 200px;
     display: block;
     margin: 0 auto;
     padding-top: 5px;
     padding-left: 5px;
+    z-index: 2;
 }
 .main-logo-desktop {
     width: 350px;

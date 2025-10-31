@@ -22,7 +22,7 @@
             </el-row>
         </el-header>
         <el-main>
-            <NavigationBar ref="navbar" class="center" id="nav-bar" @close-sidebar="closeSidebar" />
+            <NavigationBar ref="navbar" id="nav-bar" @close-sidebar="closeSidebar" />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
