@@ -30,7 +30,7 @@
             <IconLinks />
         </el-footer>
         <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
-        <small class="center tiny-text"> Built with love (and Vue.js) by Lian :D </small>
+        <small class="center tiny-text"> Built with Vue.js (and love) by Lian :) </small>
         <div style="margin-bottom: 50px;" />
     </el-container>
 </template>
