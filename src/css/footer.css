@@ -18,7 +18,7 @@
 .footer-icon {
     width: 25px;
     height: 25px;
-    filter: var(--footer-icon-filter, invert(1));
+    filter: var(--footer-icon-filter, invert(1)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
     /* Set to black: no invert filter */
     transition:
         filter 0.2s,
@@ -29,5 +29,5 @@
 .footer-icon:hover {
     opacity: 1;
     /* Light grey: invert(0.8) makes it light, no hue-rotate for blue */
-    filter: var(--footer-icon-hover-filter, invert(0.6) grayscale(1) brightness(0.7));
+    filter: var(--footer-icon-hover-filter, invert(0.3) grayscale(1) brightness(0.7));
 }

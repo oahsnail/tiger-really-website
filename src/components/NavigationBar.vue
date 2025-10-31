@@ -1,6 +1,6 @@
 <template>
     <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
-        :ellipsis="false" class="navigation-bar">
+        :ellipsis="false" class="navigation-bar heavy-font">
         <router-link to="/music">
             <el-menu-item @click="handleSelect">
                 <template #title> Music </template>

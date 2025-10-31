@@ -31,6 +31,7 @@
         </el-footer>
         <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
         <small class="center tiny-text"> Built with love (and Vue.js) by Lian :D </small>
+        <div style="margin-bottom: 50px;" />
     </el-container>
 </template>
 
