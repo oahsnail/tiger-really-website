@@ -55,7 +55,7 @@ app.mount('#app')
 router.afterEach((to) => {
     const baseTitle = 'Tiger Really'
     if (to.meta && to.meta.title) {
-        document.title = `${to.meta.title} - ${baseTitle}`
+        document.title = `${baseTitle} - ${to.meta.title}`
     } else {
         document.title = baseTitle
     }
