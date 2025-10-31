@@ -33,7 +33,7 @@
 }
 
 .el-menu--horizontal .el-menu-item {
-    padding-inline: 60px;
+    padding-inline: 40px;
     height: 50px;
     background: transparent !important;
     transition: color 0.2s;

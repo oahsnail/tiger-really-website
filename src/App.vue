@@ -8,7 +8,7 @@
                         <Expand />
                     </el-icon>
                 </el-col>
-                <el-col :span="16">
+                <el-col :span="16" style="display: flex; justify-content: center; align-items: center;">
                     <router-link v-if="!isDesktop" to="/">
                         <el-image class="main-logo-mobile" :src="trLOGO" :fit="fit" />
                     </router-link>
@@ -49,7 +49,7 @@ export default {
     data() {
         return {
             trLOGO: logo_url,
-            fit: 'contain',
+            fit: 'scale-down',
             isDesktop: window.innerWidth >= 900,
         }
     },

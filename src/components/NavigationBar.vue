@@ -1,9 +1,14 @@
 <template>
     <el-menu text-color="#ffffff" v-model:collapse="isCollapse" :default-active="activeIndex" :mode="orientation"
-        class="navigation-bar">
+        :ellipsis="false" class="navigation-bar">
         <router-link to="/music">
             <el-menu-item @click="handleSelect">
                 <template #title> Music </template>
+            </el-menu-item>
+        </router-link>
+        <router-link to="/videos">
+            <el-menu-item @click="handleSelect">
+                <template #title> Videos </template>
             </el-menu-item>
         </router-link>
         <router-link to="/tour">
