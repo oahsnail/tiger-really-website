@@ -13,7 +13,7 @@
 
 
     <section class="press-bio-section">
-        <h2 class="center heavy-font">Ghosts, Guitars, and Growing Pains</h2>
+        <h2 class="center heavy-font">Official Bio</h2>
         <p class="press-bio-text">
             Tiger Really’s <em>"mayfly daydream"</em> is
             a gazey, folk influenced take on the emo genre that explores themes of loneliness, yearning, and escapism.
