@@ -1,3 +1,18 @@
+/* Center the links in press quotes and interviews */
+.press-quotes-list,
+.press-interviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+.press-quotes-list li,
+.press-interviews-list li {
+    width: 100%;
+    text-align: center;
+    list-style-position: inside;
+}
 /* Press Quotes and Interviews section styles */
 .press-quotes-section,
 .press-interviews-section {
