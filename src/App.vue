@@ -24,11 +24,11 @@
         <el-main>
             <NavigationBar ref="navbar" id="nav-bar" @close-sidebar="closeSidebar" />
             <IconLinks />
-            <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
         <el-footer>
-            <!-- <IconLinks /> -->
+            <MailingListForm />
+            <IconLinks />
             <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
             <small class="center tiny-text"> Built with Vue.js (and love) by Lian :) </small>
         </el-footer>
@@ -42,12 +42,14 @@ import logo_url from '@/assets/img/tr_white_clear.png'
 import '@/css/footer.css'
 import '@/css/icons.css'
 import IconLinks from '@/components/IconLinks.vue'
+import MailingListForm from '@/components/MailingListForm.vue'
 
 export default {
     name: 'App',
     components: {
         NavigationBar,
         IconLinks,
+        MailingListForm
     },
     data() {
         return {

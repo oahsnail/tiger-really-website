@@ -7,7 +7,7 @@
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" @submit.prevent="handleSubmit">
                     <div id="mc_embed_signup_scroll">
-                        <small>Hear rumors and learn secrets</small>
+                        <small>Hear rumors and learn secrets (join our mailing list!)</small>
                         <div class="mailing-list-row">
                             <div class="mc-field-group">
                                 <label for="mce-EMAIL"><span class="asterisk"></span></label>
