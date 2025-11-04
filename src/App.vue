@@ -23,14 +23,15 @@
         </el-header>
         <el-main>
             <NavigationBar ref="navbar" id="nav-bar" @close-sidebar="closeSidebar" />
+            <IconLinks />
             <div style="padding-top: 5vh"></div>
             <router-view />
         </el-main>
-        <el-footer class="footer-icons">
-            <IconLinks />
+        <el-footer>
+            <!-- <IconLinks /> -->
+            <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
+            <small class="center tiny-text"> Built with Vue.js (and love) by Lian :) </small>
         </el-footer>
-        <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
-        <small class="center tiny-text"> Built with Vue.js (and love) by Lian :) </small>
         <div style="margin-bottom: 50px;" />
     </el-container>
 </template>
@@ -39,6 +40,7 @@
 import NavigationBar from './components/NavigationBar.vue'
 import logo_url from '@/assets/img/tr_white_clear.png'
 import '@/css/footer.css'
+import '@/css/icons.css'
 import IconLinks from '@/components/IconLinks.vue'
 
 export default {

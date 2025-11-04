@@ -8,7 +8,7 @@ import App from '@/App.vue'
 import HomeView from '@/views/HomeView.vue'
 import TourView from '@/views/TourView.vue'
 import ContactView from '@/views/ContactView.vue'
-import PressKitView from '@/views/PressKitView.vue'
+import PressView from '@/views/PressView.vue'
 import VideosView from '@/views/VideosView.vue'
 import MusicView from '@/views/MusicView.vue'
 import { initializeApp } from 'firebase/app'
@@ -39,7 +39,7 @@ const router = createRouter({
         { path: '/music', component: MusicView, meta: { title: 'Music' } },
         { path: '/tour', component: TourView, meta: { title: 'Tour' } },
         { path: '/contact', component: ContactView, meta: { title: 'Contact' } },
-        { path: '/press', component: PressKitView, meta: { title: 'Press Kit' } },
+        { path: '/press', component: PressView, meta: { title: 'Press Kit' } },
         { path: '/videos', component: VideosView, meta: { title: 'Videos' } },
     ],
 })

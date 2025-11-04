@@ -7,28 +7,3 @@
     color: #dfc0c0;
     text-shadow: 1px 1px 6px rgb(73, 72, 72);
 }
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 0 1rem 0;
-    background: transparent;
-}
-
-.footer-icon {
-    width: 25px;
-    height: 25px;
-    filter: var(--footer-icon-filter, invert(1)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
-    /* Set to black: no invert filter */
-    transition:
-        filter 0.2s,
-        opacity 0.2s;
-    opacity: 0.85;
-}
-
-.footer-icon:hover {
-    opacity: 1;
-    /* Light grey: invert(0.8) makes it light, no hue-rotate for blue */
-    filter: var(--footer-icon-hover-filter, invert(0.3) grayscale(1) brightness(0.7));
-}
