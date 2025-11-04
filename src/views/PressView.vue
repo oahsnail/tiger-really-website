@@ -13,21 +13,33 @@
 
 
     <section class="press-bio-section">
-        <h2 class="center heavy-font">Official Bio</h2>
+        <h2 class="center heavy-font">Ghosts, Guitars, and Growing Pains</h2>
         <p class="press-bio-text">
-            Starting out as a stupid pun on the name of a flower, Tiger Really has since transformed from a bedroom
-            project to one of the most exciting and unique bands the Vancouver scene has to offer. Fronted by
-            songwriter/multi-instrumentalist Lian Shao, the band has carved out a niche for themselves by mixing emo
-            with elements of jazz, punk, and indie rock, creating a sound that is both distinct and deeply
-            resonant.<br><br>
+            Tiger Really’s <em>"mayfly daydream"</em> is
+            a gazey, folk influenced take on the emo genre that explores themes of loneliness, yearning, and escapism.
+            Written during a period of extensive long-term social isolation and loss, mayfly daydream is the
+            genre-splicing horror-tinged sophomore album from Vancouver based emo project Tiger Really. Taking thematic
+            inspiration from various cryptids and supernatural myths of American folklore and horror stories, the album
+            tells a story of avoidance, loneliness, escapism, and ultimately acceptance for the way things are.
+            Manifesting through fuzzy yet delicate guitar lines, confessional lyrics, and vivid imagery, the result is a
+            body of work that feels both deeply personal and universally resonant.
+
+            <br><br>
+            The album features guest performances from Samuel Uribe Botero of Racing Mount Pleasant, Carson Bassett from
+            daysormay, idialedyournumber, and Jia, expanding Tiger Really’s sonic palette while remaining anchored in
+            their trademark vulnerability and introspection.
+            FFO: ‘Origami Angel’, ‘Glocca Morra’, ‘julie’, ‘MJ Lenderman’, ‘Black Country, New Road’
+            <br><br>
             Since signing with legendary emo label Counter Intuitive Records in 2023, Tiger Really has built a dedicated
             global audience through social media and word of mouth, alongside performing frequent local shows and
             sharing stages with some of the genre's most influential touring acts including 'Michael Cera Palin',
-            'Chinese Football', 'Weatherday' and 'Your Arms Are My Cocoon'. Their consistently electrifying performances
+            'Chinese Football', 'Weatherday', 'Anamanaguchi', and 'Your Arms Are My Cocoon'. Their consistently
+            electrifying performances
             coupled with Lian's intensely personal songwriting has garnered them a deeply connected fan base and
             community, cementing themselves as a staple of the Vancouver underground.<br><br>
-            Tiger Really is set to release their highly anticipated debut full length album "Swan Sting" on October 18th
-            2024 through Counter Intuitive records.
+            <em>"mayfly daydream"</em> is set to release on
+            December 3rd,
+            2026 through Counter Intuitive records.
         </p>
     </section>
     <section class="press-quotes-section">
