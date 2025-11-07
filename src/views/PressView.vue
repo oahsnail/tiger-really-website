@@ -38,8 +38,7 @@
             coupled with Lian's intensely personal songwriting has garnered them a deeply connected fan base and
             community, cementing themselves as a staple of the Vancouver underground.<br><br>
             <em>"mayfly daydream"</em> is set to release on
-            December 3rd,
-            2026 through Counter Intuitive records.
+            February 27th, 2026 through Counter Intuitive records.
         </p>
     </section>
     <section class="press-quotes-section">
