@@ -1,6 +1,6 @@
 <template>
     <br />
-    <AlbumWidget coverArt="mayfly_daydream.jpg" bandcampUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+    <AlbumWidget coverArt="mayfly_daydream.jpg" bandcampUrl="https://orcd.co/trmd" />
     <br />
     <AlbumWidget coverArt="swan_sting.jpg"
         bandcampUrl="https://counterintuitiverecords.bandcamp.com/album/swan-sting" />
