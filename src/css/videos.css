@@ -1,0 +1,27 @@
+@media (min-width: 990px) {
+    .video-row .el-col:first-child .video-iframe {
+        margin-right: 0.6rem;
+        margin-left: 0;
+    }
+    .video-row .el-col:last-child .video-iframe {
+        margin-left: 0.6rem;
+        margin-right: 0;
+    }
+}
+/* videos.css */
+
+.video-iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+}
+
+.videos-container {
+    width: 70vw !important;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,114 @@
+/* Center the links in press quotes and interviews */
+.press-quotes-list,
+.press-interviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+.press-quotes-list li,
+.press-interviews-list li {
+    width: 100%;
+    text-align: center;
+    list-style-position: inside;
+}
+/* Press Quotes and Interviews section styles */
+.press-quotes-section,
+.press-interviews-section {
+    max-width: 800px;
+    margin: 2.5rem auto 0 auto;
+    padding: 1.5rem 2vw;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+}
+.press-quotes-section h2,
+.press-interviews-section h2 {
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+.press-quotes-list,
+.press-interviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.press-quotes-list li,
+.press-interviews-list li {
+    margin-bottom: 1.1rem;
+    font-size: 1.08rem;
+    color: #fff;
+    font-family: 'NeueHaasDisplay', Arial, sans-serif;
+    line-height: 1.6;
+}
+.press-quotes-list q {
+    font-style: italic;
+    color: #ffffff;
+}
+.press-quotes-list a,
+.press-interviews-list a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.press-quotes-list a:hover,
+.press-interviews-list a:hover {
+    color: #fff;
+}
+/* Official bio section styles */
+.press-bio-section {
+    max-width: 700px;
+    margin: 2.5rem auto 0 auto;
+    padding: 1.5rem 2vw;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+}
+.press-bio-section h2 {
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+.press-bio-text {
+    color: #fff;
+    font-family: 'NeueHaasDisplay', Arial, sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    text-align: left;
+    margin: 0;
+    white-space: pre-line;
+}
+/* Custom style for PressView download button */
+.press-download-btn {
+    color: #fff;
+    font-family: 'NeueHaasDisplay', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    padding: 0.7em 2em;
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        border 0.2s;
+    outline: none;
+    box-shadow: none;
+    display: inline-block;
+}
+
+.press-download-btn:hover,
+.press-download-btn:focus {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+/* PressView logo size */
+.press-logo {
+    width: 30vw;
+    min-width: 280px;
+    max-width: 100%;
+    display: block;
+    margin: 2rem auto;
+}

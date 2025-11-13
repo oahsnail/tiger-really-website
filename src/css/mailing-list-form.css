@@ -1,0 +1,49 @@
+/* Style the placeholder text color */
+.mailing-list-row input::placeholder {
+    color: #aaa;
+    opacity: 1;
+    font-size: 0.95em;
+}
+/* MailingListForm scoped styles */
+.mc-field-group {
+    padding-bottom: 0 !important;
+}
+.mailing-list-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5em;
+}
+.mailing-list-row .mc-field-group {
+    flex: 1 1 auto;
+}
+.mailing-list-row input[type='email'] {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.2em 0.6em;
+    font-size: 0.95em;
+    line-height: 1.1;
+    height: auto;
+}
+.mailing-list-row .button {
+    flex: 0 0 auto;
+    min-width: 100px;
+    height: 40px !important;
+    margin-left: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+    color: #f8f8f8 !important;
+    background-color: #025779 !important;
+}
+
+@media (max-width: 600px) {
+    .mailing-list-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5em;
+    }
+    .mailing-list-row .button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
