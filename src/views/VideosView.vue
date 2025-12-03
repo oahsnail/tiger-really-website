@@ -22,6 +22,14 @@
     <div class="center videos-container">
         <el-row justify=" center" class="video-row">
             <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" class="center heavy-font">
+                <iframe class="video-iframe" src="https://www.youtube.com/embed/E7in2o8UZMI"
+                    title="tiger really - some kind of necromancer (Official Music Video)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </el-col>
+        </el-row>
+        <el-row justify=" center" class="video-row">
+            <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" class="center heavy-font">
                 <iframe class="video-iframe" src="https://www.youtube.com/embed/DReXigxqGXM"
                     title="tiger really - Rites of Spring [OFFICIAL MUSIC VIDEO]" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
