@@ -15,7 +15,4 @@ export default defineConfig({
     build: {
         outDir: 'public',
     },
-    server: {
-        historyApiFallback: true,
-    },
 })

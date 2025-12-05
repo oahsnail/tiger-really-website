@@ -3,7 +3,7 @@ import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import 'element-plus/dist/index.css'
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import App from '@/App.vue'
 import HomeView from '@/views/HomeView.vue'
 import TourView from '@/views/TourView.vue'
@@ -33,7 +33,7 @@ if (import.meta.env.MODE === 'production') {
 }
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: [
         { path: '/', component: HomeView, meta: { title: 'Home' } },
         { path: '/music', component: MusicView, meta: { title: 'Music' } },
