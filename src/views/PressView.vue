@@ -50,9 +50,14 @@
                     target="_blank" rel="noopener">The Georgia Straight</a>
             </li>
             <li>
-                <q>An unpretentious breath of fresh air.</q> –
+                <q>An unpretentious breath of fresh air</q> –
                 <a href="https://www.kerrang.com/the-sound-of-2024-the-new-artists-redefining-alternative-music"
                     target="_blank" rel="noopener">Kerrang</a>
+            </li>
+            <li>
+                <q>Trauma dumping has never been so welcome or sounded so good</q> –
+                <a href="https://moosicentertainment.com/2025/12/05/like-mixing-champagne-and-ativan-emo-jazz-pioneers-tiger-really-release-new-single/"
+                    target="_blank" rel="noopener">Moosic Entertainment</a>
             </li>
             <li>
                 <q>An intimate look into coping with loss and personal struggles</q> –
