@@ -28,6 +28,11 @@
         </el-main>
         <el-footer>
             <MailingListForm />
+            <div style="text-align: center;">
+                <a href='https://ko-fi.com/O5O41Y11PM' target='_blank'><img height='36' style='border:0px;height:36px;'
+                        src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0'
+                        alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
             <IconLinks />
             <small class="center tiny-text"> © 2025 Tiger Really. All rights reserved. </small>
             <small class="center tiny-text"> Built with Vue.js (and love) by Lian :) </small>
