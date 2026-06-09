@@ -22,7 +22,7 @@
                 <template #title> Press </template>
             </el-menu-item>
         </router-link>
-        <a href="https://counterintuitiverecords.com/collections/tiger-really" target="_blank" rel="noopener">
+        <a href="https://shop.tigerreally.com/" target="_blank" rel="noopener">
             <el-menu-item>
                 <template #title> Store </template>
             </el-menu-item>
