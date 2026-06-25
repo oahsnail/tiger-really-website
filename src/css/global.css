@@ -56,6 +56,10 @@
     background-color: transparent;
     padding: 0% !important;
     height: 100px !important;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .el-main {

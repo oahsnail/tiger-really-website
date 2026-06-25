@@ -15,7 +15,7 @@
                 </el-col>
                 <el-col :span="4"> </el-col>
             </el-row>
-            <el-row class="main-logo-desktop center" v-if="isDesktop">
+            <el-row class="main-logo-desktop center" justify="center" v-if="isDesktop">
                 <router-link to="/">
                     <el-image :src="trLOGO" :fit="fit" />
                 </router-link>
@@ -44,7 +44,7 @@
 
 <script>
 import NavigationBar from './components/NavigationBar.vue'
-import logo_url from '@/assets/img/tr_white_clear.png'
+import logo_url from '@/assets/img/TR Logo - White.png'
 import '@/css/footer.css'
 import '@/css/icons.css'
 import IconLinks from '@/components/IconLinks.vue'

@@ -1,18 +1,7 @@
-.el-menu:not(.el-menu--collapse) {
-    width: 150px;
-    height: 100vh;
-}
-
-.el-menu--collapse {
-    width: 0px;
-    height: 0vh;
-
-    /* Prevents navbar from being clicked while collapsed */
-    pointer-events: none;
-}
-
 .el-menu--vertical {
     position: fixed;
+    width: 150px;
+    height: 100vh;
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 1) 0%,
@@ -22,6 +11,19 @@
     z-index: 1;
     top: 0px;
     padding-top: 80px; /* Adjust padding to maintain layout */
+
+    /* Slide in/out off-canvas instead of animating width/height.
+       transform is GPU-composited, so the gradient never repaints per frame. */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    /* Prevents navbar from being clicked while hidden */
+    pointer-events: none;
+}
+
+.el-menu--vertical.is-open {
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 .el-menu--vertical .el-menu-item {
