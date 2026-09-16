@@ -12,7 +12,7 @@ import PressView from '@/views/PressView.vue'
 import VideosView from '@/views/VideosView.vue'
 import MusicView from '@/views/MusicView.vue'
 import { initializeApp } from 'firebase/app'
-import { getAnalytics, logEvent } from 'firebase/analytics'
+import { getAnalytics, isSupported, logEvent } from 'firebase/analytics'
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -24,13 +24,26 @@ const firebaseConfig = {
     measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 }
 
-// Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig)
-
-let analytics = null
-if (import.meta.env.MODE === 'production') {
-    analytics = getAnalytics(firebaseApp)
+async function initializeAnalytics() {
+    // Analytics is optional: missing configuration or browser support must not block rendering.
+    if (
+        import.meta.env.MODE !== 'production' ||
+        !firebaseConfig.apiKey ||
+        !firebaseConfig.appId ||
+        !firebaseConfig.projectId
+    ) {
+        return null
+    }
+    try {
+        if (!(await isSupported())) return null
+        return getAnalytics(initializeApp(firebaseConfig))
+    } catch (error) {
+        console.warn('Firebase Analytics is unavailable.', error)
+        return null
+    }
 }
+
+const analyticsReady = initializeAnalytics()
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -57,7 +70,7 @@ app.use(ElementPlus)
 app.use(router)
 app.mount('#app')
 
-router.afterEach((to) => {
+router.afterEach(async (to) => {
     const baseTitle = 'Tiger Really'
     if (to.meta && to.meta.title) {
         document.title = `${baseTitle} - ${to.meta.title}`
@@ -66,6 +79,7 @@ router.afterEach((to) => {
     }
     // Log page_view event
     try {
+        const analytics = await analyticsReady
         if (analytics) {
             logEvent(analytics, 'page_view', { page_path: to.fullPath })
         }
