@@ -1,13 +1,13 @@
 <template>
     <br />
-    <AlbumWidget coverArt="mayfly_daydream.jpg" bandcampUrl="https://orcd.co/trmd" />
+    <AlbumWidget coverArt="mayfly_daydream.webp" bandcampUrl="https://orcd.co/trmd" />
     <br />
-    <AlbumWidget coverArt="swan_sting.jpg"
+    <AlbumWidget coverArt="swan_sting.webp"
         bandcampUrl="https://counterintuitiverecords.bandcamp.com/album/swan-sting" />
     <br />
-    <AlbumWidget coverArt="slippers.jpg" bandcampUrl="https://tigerreally.bandcamp.com/track/slippers" />
+    <AlbumWidget coverArt="slippers.webp" bandcampUrl="https://tigerreally.bandcamp.com/track/slippers" />
     <br />
-    <AlbumWidget coverArt="rites_of_spring.jpg" bandcampUrl="https://tigerreally.bandcamp.com/album/rites-of-spring" />
+    <AlbumWidget coverArt="rites_of_spring.webp" bandcampUrl="https://tigerreally.bandcamp.com/album/rites-of-spring" />
 </template>
 
 <script>

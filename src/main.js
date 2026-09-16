@@ -37,6 +37,11 @@ const router = createRouter({
     routes: [
         { path: '/', component: HomeView, meta: { title: 'Home' } },
         { path: '/music', component: MusicView, meta: { title: 'Music' } },
+        {
+            path: '/some-kind-of-necromancer',
+            component: () => import('@/views/NecromancerView.vue'),
+            meta: { title: 'some kind of necromancer', standalone: true },
+        },
         { path: '/tour', component: TourView, meta: { title: 'Tour' } },
         { path: '/contact', component: ContactView, meta: { title: 'Contact' } },
         { path: '/press', component: PressView, meta: { title: 'Press Kit' } },

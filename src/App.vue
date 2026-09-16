@@ -1,5 +1,6 @@
 <template>
-    <el-container>
+    <router-view v-if="$route.meta.standalone" />
+    <el-container v-else>
         <el-header>
             <el-row>
                 <el-col :span="4">

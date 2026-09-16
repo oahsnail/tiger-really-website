@@ -103,7 +103,7 @@
 
 <script>
 import '@/css/press.css'
-import logo_url from '@/assets/img/some_kind_of_necromancer.jpg'
+import logo_url from '@/assets/img/some_kind_of_necromancer.webp'
 export default {
     name: 'PressView',
 
